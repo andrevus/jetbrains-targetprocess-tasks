@@ -1,0 +1,34 @@
+<idea-plugin version="2">
+  <id>net.andrevus.jetbrains.tasks.targetprocess</id>
+  <name>Target Process Tasks Connector</name>
+  <version>1.0</version>
+  <vendor email="andrevus@gmail.com" url="http://github.com/andrevus/tp-plugin">Andrevus</vendor>
+
+  <description><![CDATA[
+      Plugin which integrate Target Process with IDE.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First version
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <depends optional="true" config-file="tasks.xml">com.intellij.tasks</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+
+</idea-plugin>

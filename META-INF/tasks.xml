@@ -1,0 +1,5 @@
+<idea-plugin version="2">
+    <extensions defaultExtensionNs="com.intellij">
+        <tasks.repositoryType implementation="net.andrevus.jetbrains.tasks.TargetProcessRepositoryType"/>
+    </extensions>
+</idea-plugin>
