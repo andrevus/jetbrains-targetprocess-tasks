@@ -1,34 +1,35 @@
 <idea-plugin version="2">
-  <id>net.andrevus.jetbrains.tasks.targetprocess</id>
-  <name>Target Process Tasks Connector</name>
-  <version>1.0</version>
-  <vendor email="andrevus@gmail.com" url="http://github.com/andrevus/tp-plugin">Andrevus</vendor>
+    <id>net.andrevus.jetbrains.tasks.targetprocess</id>
+    <name>TargetProcess Tasks Connector</name>
+    <version>1.0.1</version>
+    <vendor email="andrevus@gmail.com" url="https://github.com/andrevus/jetbrains-targetprocess-tasks">Andrevus</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       Plugin which integrate Target Process with IDE.<br>
     ]]></description>
 
-  <change-notes><![CDATA[
-      First version
+    <change-notes><![CDATA[
+    <p>1.0.1
+        <ul>
+            <li>Fix problems with loading plugin</li>
+        </ul>
+    </p>
+    <p>1.0
+        <ul>
+            <li>First version</li>
+        </ul>
+    </p>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="131"/>
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
 
-  <depends optional="true" config-file="tasks.xml">com.intellij.tasks</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.tasks</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
-
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
-
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
-
+    <extensions defaultExtensionNs="com.intellij">
+        <tasks.repositoryType implementation="net.andrevus.jetbrains.tasks.TargetProcessRepositoryType"/>
+    </extensions>
 
 </idea-plugin>
